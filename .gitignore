@@ -1,5 +1,4 @@
 *.pyc
 __pycache__
 josue
-db.sqlite3
 .DS_Store
