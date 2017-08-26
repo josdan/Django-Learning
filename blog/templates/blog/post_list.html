@@ -11,6 +11,8 @@
                             	</div>
 			    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                             <p>{{ post.text|linebreaksbr }}</p>
+							<p>{{ post.more_text|linebreaksbr }}</p>
+							<p>{{ post.email|linebreaksbr }}</p>
                             </div>
 			{% endfor %}
    		 {% endblock content %}	
