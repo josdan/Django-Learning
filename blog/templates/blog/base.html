@@ -2,7 +2,10 @@
 <html>
         <head>
                 <div class="page-header">
+                    {% if user.is_authenticated %}
                     <h3><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a></h3>
+                    {% endif %}
+
                     <h1><a href="/">Josué Blog</h1></a><h3>Aprendizaje Python Django</h3>
                 </div>
                 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
